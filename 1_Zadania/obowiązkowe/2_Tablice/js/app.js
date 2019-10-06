@@ -50,3 +50,26 @@ function multiply(array){
 }
 
 multiply([1,2,3,4,5,6,7]);
+
+//ZADANIE 5
+function getEvenAverage(array){
+    let evenSum = 0;
+    let evenCounter = 0;
+    for(let i=0; i<array.length; i++){
+        if(array[i] % 2 == 0){
+            evenSum += array[i];
+            evenCounter++;
+        }
+    }
+
+
+    let evenAvg = evenSum / evenCounter;
+    if(evenCounter == 0){
+        return null;
+    }
+    else {
+        return evenAvg;
+    }
+}
+
+getEvenAverage([1,2,3,4,5,6,7]);
