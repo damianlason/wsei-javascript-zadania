@@ -28,3 +28,25 @@ fruits.forEach(fruit => {
     console.log(fruit)
 });
 
+//ZADANIE 2
+
+//ZADANIE 3
+function printTable(array){
+    for (var i=0; i<=array.length; i++)
+    {
+        console.log(array[i]);
+    }
+}
+printTable([1,2,3,4,]);
+
+//ZADANIE 4
+function multiply(array){
+    let sum = 1;
+    for(var i = 0;i<array.length; i++){
+        sum *= array[i];
+    }
+    console.log(sum);
+    return sum;
+}
+
+multiply([1,2,3,4,5,6,7]);
