@@ -73,3 +73,12 @@ function getEvenAverage(array){
 }
 
 getEvenAverage([1,2,3,4,5,6,7]);
+
+//ZADANIE 6
+
+function sortArray(array) {
+    array.sort((a,b) => a-b);
+    console.log(array);
+    return array;
+}
+sortArray([145,11,3,64,4,6,10]);
