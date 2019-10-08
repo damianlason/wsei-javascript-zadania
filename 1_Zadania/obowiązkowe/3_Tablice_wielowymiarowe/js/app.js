@@ -19,6 +19,7 @@ var arr = [[11, 12],[42, 2],[-4, -120],[0, 0],[1, 34],];
 checkArray(arr);
 
 // ZADANIE 1
+
 var task1Array = [
     [2, 3],
     ["Ala", "Ola"],
@@ -27,6 +28,11 @@ var task1Array = [
     [12, 15, 67]
 ];
 
+//wypisuję elementy licząc od 1, nie od 0 
+
+console.log(task1Array[2][1]); 
+console.log(task1Array[1].length);
+console.log(task1Array[3][1]);
 
 var task2Array = [
     [1, 2, 3, 4],
