@@ -1,4 +1,24 @@
+// ZADANIE 0
 
+function checkArray(table){
+  var numberOfIndexes = table.length;
+  var result=[];
+  for(var i=0; i<numberOfIndexes; i++){    
+    if(table[i][0]%2==0){
+      result.push(true);
+    }
+    else{
+      result.push(false);
+    }
+  }  
+console.log(result);
+}
+
+var arr = [[11, 12],[42, 2],[-4, -120],[0, 0],[1, 34],];
+
+checkArray(arr);
+
+// ZADANIE 1
 var task1Array = [
     [2, 3],
     ["Ala", "Ola"],
