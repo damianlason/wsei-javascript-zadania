@@ -82,3 +82,37 @@ function sortArray(array) {
     return array;
 }
 sortArray([145,11,3,64,4,6,10]);
+
+//ZADANIE 7
+
+function addArrays(array1, array2){
+    var commonPart = Math.min(array1.length , array2.length);
+    var numberOfIndexes = (Math.max(array1.length, array2.length))-1;
+    var result = [];
+    
+    for(var i=0; i<commonPart; i++){
+        var sum = array1[i] + array2[i];
+        result.push(sum);
+    }
+       
+    if(array1.length == array2.length){
+        console.log(result);
+        return;
+    }
+    
+    else if(array1.length > array2.length){
+        for(var i=commonPart; i<=numberOfIndexes; i++){
+            result.push(array1[i]);
+        }
+    }
+    else{
+        for(var i=commonPart; i<=numberOfIndexes; i++){
+            result.push(array2[i]);
+        }  
+    }
+    
+    console.log(result);
+}
+addArrays([4,0,1,3,4], [1,9,6,7,8,17]);
+addArrays([8,3,22], [1,3,2]);
+addArrays([2,3,1,5,3,5], [3,1,76,1]);
