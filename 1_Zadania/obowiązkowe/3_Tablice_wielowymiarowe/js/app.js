@@ -34,8 +34,25 @@ console.log(task1Array[2][1]);
 console.log(task1Array[1].length);
 console.log(task1Array[3][1]);
 
+// ZADANIE 2
+
 var task2Array = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
     [9, 10, 11, 12]
 ];
+
+//ZADANIE 3
+
+function print2DArray(array){
+    var length = array.length;
+    
+    for(var i=0; i<length; i++){
+        for(var j=0; j<array[i].length; j++){
+          console.log(array[i][j]);
+        }
+      }   
+}
+
+var table = [[1], [2,3,4,5,6], [7,8,9,10,11,12,13]];
+print2DArray(table);
