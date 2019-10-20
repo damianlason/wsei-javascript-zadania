@@ -79,3 +79,18 @@ print2DArray(table);
 
 //ZADANIE 5
 
+function create2DArray(rows,columns){
+  var firstTable = [];  
+  var number = 1;
+  for(var i=0;i<columns;i++){  
+    var secondTable = []; 
+      for (var j=0;j<rows;j++){          
+          secondTable.push(number);
+          number++;
+      }
+      firstTable.push(secondTable);
+    }
+    return firstTable;
+  }
+
+create2DArray(4,4);
