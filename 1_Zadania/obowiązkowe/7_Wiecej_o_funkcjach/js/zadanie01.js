@@ -5,21 +5,21 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//Stworzenie funkcji sortArray
 function sortArray() {
 
-    //Twoj komentarz ...
+    //Zadeklarowanie tablicy points
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //Posortowanie tablicy points
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //Użycie funkcji porównania, ponieważ domyślnie funkcja 'sort' sortuje wartości jako ciągi znaków. Używając takiego porównania tablica zostanie posortowana rosnąco, jednak jeśli chcielibyśmy posortować ją malejąco, musielibyśmy użyć zapisu b - a 
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //Zwrócenie posortowanej już tablicy 'points'
     return points;
 }
 
-//Twoj komentarz ...
+//Wywołanie funkcji sortArray
 sortArray();
