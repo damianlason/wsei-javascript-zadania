@@ -47,3 +47,8 @@ var stairs = {
         console.log(this.step);
     }
 }
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down(); 
+stairs.printStep();
