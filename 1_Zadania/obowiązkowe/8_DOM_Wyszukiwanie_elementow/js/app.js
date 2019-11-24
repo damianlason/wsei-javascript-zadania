@@ -32,6 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
     
     //ZADANIE 2
     
-    
+    const nav = document.querySelector('nav li');
+    console.log(nav);
+
+    const divs = document.querySelectorAll('div p');
+    console.log(divs);
+
+    const divsInArticle = document.querySelectorAll('article div');
+    console.log(divsInArticle);
+
+    //ZADANIE 3
+
+    const articleTag = document.querySelector('article.first');
+
+    const everyH1 = articleTag.querySelectorAll('h1').length;
+    console.log(everyH1);
     
 });
