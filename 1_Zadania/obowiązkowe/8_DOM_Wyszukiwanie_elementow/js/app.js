@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     //1
     var idHomeFirstWay = document.querySelector("#home");
+    console.log(idHomeFirstWay);
     var idHomeSecondWay = document.getElementById("home");
+    console.log(idHomeSecondWay);
     
     //2
     var list = document.getElementsByTagName("li");
@@ -32,6 +34,29 @@ document.addEventListener("DOMContentLoaded", function () {
     
     //ZADANIE 2
     
+    //1 
     
+    const nav = document.querySelector('nav li');
+    console.log(nav);
     
+    //2
+
+    const divs = document.querySelectorAll('div p');
+    console.log(divs);
+    
+    //3
+
+    const divsInArticle = document.querySelectorAll('article div');
+    console.log(divsInArticle);
+
+    //ZADANIE 3
+    
+    //1
+
+    const articleTag = document.querySelector('article.first');
+    
+    //2
+
+    const everyH1 = articleTag.querySelectorAll('h1').length;
+    console.log(everyH1); 
 });
