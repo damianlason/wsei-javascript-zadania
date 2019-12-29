@@ -1,22 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /*
-    Poniżej napisz kod rozwiązujący zadania
-     */
-    
+
     //ZADANIE 0
     
-    var ex5ul = document.querySelectorAll('.ex5 li').length;
-    for(var i=0; i<ex5ul; i++){
-//        if(i%2==0){
-//            document.querySelectorAll('.ex5 li')[i].style.backgroundColor = "green";
-//        }
-        if(i==4){
-            document.querySelectorAll('.ex5 li')[4].classList.add("big");
+    var ex5li = document.querySelectorAll('.ex5 li');
+    for(var i=1; i<=ex5li.length; i++){
+        if(i%2==1){
+            ex5li[i].style.backgroundColor = "green";
+        }
+        else if(i%3==0){
+            ex5li[i].style.fontSize = "30px";
+        }
+        else if(i==5){
+            ex5li[i].className = "big";
         }
     }
     
     
     
     
-
 });

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     //2
-
+    
     const divs = document.querySelectorAll('div p');
     console.log(divs);
     
