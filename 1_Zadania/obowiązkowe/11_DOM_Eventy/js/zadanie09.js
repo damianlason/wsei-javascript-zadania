@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     innerFuncOne();
 
+    // function innerFuncOne(b) {  => jako parametr przekazuję element b
+    //   b.style.backgroundColor = "blue"; => przekazanemu elementowi zmianiam kolor na niebieski
+    //   console.log("innerFuncOne: ", b.style.backgroundColor); => w consoli piszę informację o kolorze
+    // }
+    // innerFuncOne(this); => this wskasuje na parametr funkcji czyli element b
+
   });
 
 })
