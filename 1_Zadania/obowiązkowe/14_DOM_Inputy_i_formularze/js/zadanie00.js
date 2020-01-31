@@ -12,24 +12,22 @@ document.addEventListener("DOMContentLoaded", function(){
         can = false,
         canPush = false;
     
+        button.type="button";
+
         button.addEventListener('click', click);
         
     function click(){
         canPush = true;
+        pass();
         CheckMail();
         CheckName();
         CheckSurname();
-        CheckboxCheck();
-        if(pass1.value.length > 0 && pass2.value.length > 0){
-            pass();
-        }
+        CheckboxCheck();        
+        
         if(canPush == true){
             button.type = "submit";
             form.action = "http://api.coderslab.pl/showpost.php";
-        }
-        else{
-            form.action = "";
-        }
+        }        
     }
     function CheckMail(){
         for(var i = 0; i < email.value.length;i++){
@@ -56,7 +54,13 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
     function pass(){
-        if(pass1.value == pass2.value){}
+        if(pass1.value.length>0 && pass2.value.length>0){
+            if(pass1.value == pass2.value){}
+            else{
+            divErrorMessage.innerHTML = "Hasła nie są takie same lub puste";
+            canPush = false;
+        }
+        }
         else{
             divErrorMessage.innerHTML = "Hasła nie są takie same lub puste";
             canPush = false;
