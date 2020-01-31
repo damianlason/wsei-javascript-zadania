@@ -1,11 +1,14 @@
 //ZADANIE 0 Car
 
+var answer;
+
 var car = {
     brand: "Mercedes",
     color: "Czarny",
     numberOfKilometers: 0,
     printCarInfo:function(){
-        console.log(car.color + " " + car.brand +", "+car.numberOfKilometers);
+        answer = car.color + " " + car.brand +", "+car.numberOfKilometers+"km";
+        return answer;
     },
     drive:function(km){
         this.numberOfKilometers += km;
@@ -18,6 +21,8 @@ car.printCarInfo();
 
 //ZADANIE 1
 
+var resultEx1;
+
 car.inspectionDates = ["20.10.2015","20.10.2016","20.10.2017"];
 car.newInspectionDate = function(newDate) {
     this.inspectionDates.push(newDate);
@@ -25,7 +30,8 @@ car.newInspectionDate = function(newDate) {
 car.showInspectionDates = function(){
     var length = this.inspectionDates.length;
     for(var i = 0; i<length; i++){
-        console.log(this.inspectionDates[i]);
+        resultEx1 = this.inspectionDates[i];
+        console.log(resultEx1);
     }
 }
 

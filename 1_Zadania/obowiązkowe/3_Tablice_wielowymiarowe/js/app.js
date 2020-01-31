@@ -11,7 +11,7 @@ function checkArray(table){
       result.push(false);
     }
   }  
-console.log(result);
+return result;
 }
 
 var arr = [[11, 12],[42, 2],[-4, -120],[0, 0],[1, 34],];

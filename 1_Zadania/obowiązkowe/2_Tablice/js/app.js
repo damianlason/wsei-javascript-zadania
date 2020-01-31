@@ -10,9 +10,7 @@ const distFromAvarage = (arr) => {
 
     arr.forEach(item => {
         newArr.push(item - avg);
-    })
-
-    console.log(newArr);
+    })        
     return newArr;
 }
 
@@ -45,7 +43,7 @@ function multiply(array){
     for(var i = 0;i<array.length; i++){
         sum *= array[i];
     }
-    console.log(sum);
+    
     return sum;
 }
 
@@ -78,7 +76,6 @@ getEvenAverage([1,2,3,4,5,6,7]);
 
 function sortArray(array) {
     array.sort((a,b) => a-b);
-    console.log(array);
     return array;
 }
 sortArray([145,11,3,64,4,6,10]);
@@ -96,7 +93,7 @@ function addArrays(array1, array2){
     }
        
     if(array1.length == array2.length){
-        console.log(result);
+        return result;
         return;
     }
     
@@ -111,7 +108,7 @@ function addArrays(array1, array2){
         }  
     }
     
-    console.log(result);
+    return result;
 }
 addArrays([4,0,1,3,4], [1,9,6,7,8,17]);
 addArrays([8,3,22], [1,3,2]);

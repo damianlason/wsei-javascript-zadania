@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             console.log("test");
             type.innerText = "";
-            name.style.border = "solid 0px green";
+            name.style.border = "none";
             console.log("test2");
             typeOfCard = "other";
-            name.addEventListener('change', CheckColor);
+            // name.addEventListener('change', CheckColor);
         }
     }
 
@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function(){
             else{
                 name.style.border = "";
             } 
+        }
+        else{
+            name.style.border = "none";
         }        
     }
     
